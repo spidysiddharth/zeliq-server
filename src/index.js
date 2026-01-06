@@ -21,6 +21,11 @@ app.use('/api/contact', contactRoutes);
 app.use('/api/translate', translationRoutes);
 app.use('/api/emails', emailRoutes);
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'Server is running' });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
