@@ -4,6 +4,6 @@ import { handleContactForm } from '../controllers/contactController.js';
 const router = express.Router();
 
 // POST /api/contact - Handle contact form submission
-router.post('/contact', handleContactForm);
+router.post('/', handleContactForm);
 
 export default router;
