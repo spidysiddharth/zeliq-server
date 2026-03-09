@@ -1,6 +1,6 @@
 import sendEmail from '../services/emailService.js';
 import { getCompanyNotificationEmail, getThankYouEmail } from '../templates/emailTemplates.js';
-
+//serverside logic for handling contact form submission
 export const handleContactForm = async (req, res) => {
   try {
     const { name, email, company, phone, message } = req.body;
